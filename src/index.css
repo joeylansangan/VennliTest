@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .menu-btn{
+    @apply uppercase w-max px-10 py-1 bg-green-600 rounded-full border border-solid border-green-600 transition-all hover:bg-transparent
+  }
+}
+
 html, body{
   background-color: #082032;
   color: white;

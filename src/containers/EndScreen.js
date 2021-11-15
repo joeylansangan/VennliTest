@@ -7,6 +7,7 @@ function EndScreen({results, questions, onReset}) {
     useEffect(() => {
         let currentScore = 0;
         results.forEach((result, i) => {
+            //compare user answers against correct answers
             if(result.a === questions[i].correct_answer){
                 currentScore++
             }
