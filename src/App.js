@@ -55,7 +55,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="min-h-screen text-center">
       {screen === 'menu' && <MenuScreen onStart={handleStartTrivia}/>}
       {screen === 'trivia' && 
         <TriviaScreen 
