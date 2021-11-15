@@ -4,7 +4,6 @@ import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 function EndScreen({results, questions, onReset}) {
     const [score, setScore] = useState(0);
 
-    //calculate score on first render/mount
     useEffect(() => {
         let currentScore = 0;
         results.forEach((result, i) => {
@@ -14,7 +13,7 @@ function EndScreen({results, questions, onReset}) {
             }
         });
         setScore(currentScore)
-    },[])
+    },[questions, results])
     
     return (
         <div className="py-8 px-4">

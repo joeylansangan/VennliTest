@@ -44,7 +44,6 @@ function App() {
     }
     //add user's choice to answers array
     setAnswers(prevState => [...prevState, { q: questions[currentIdx].question, a: answer }])
-    console.log(answers)
   }
 
   //play again
