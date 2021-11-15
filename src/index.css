@@ -4,10 +4,10 @@
 
 @layer components{
   .menu-btn{
-    @apply uppercase w-max px-10 py-1 bg-green-600 rounded-full border border-solid border-green-600 transition-all hover:bg-transparent
+    @apply uppercase w-max px-10 py-1 bg-green-600 rounded-full border border-solid border-green-600 transition-all duration-500 hover:bg-transparent
   }
   .answer-btn{
-    @apply bg-transparent border border-solid text-white py-2 rounded-full cursor-pointer hover:border-green-500 hover:text-green-500
+    @apply bg-transparent border border-solid text-white py-2 rounded-full cursor-pointer transition-all duration-500 hover:border-green-500 hover:text-green-500
   }
 }
 
