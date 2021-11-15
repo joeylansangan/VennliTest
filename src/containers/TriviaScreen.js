@@ -7,7 +7,7 @@ function TriviaScreen({qIdx, questions}) {
     return (
         <div>
             <h2>Category: {category}</h2>
-            <p>{question}</p>
+            <h4 dangerouslySetInnerHTML={{ __html: question}}/>
         </div>
     )
 }
