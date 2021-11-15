@@ -62,8 +62,16 @@ function App() {
           handleAnswer={handleAnswer}
           qIdx={currentIdx}
           questions={questions}
-        />}
-      {screen === 'end' && <EndScreen onReset={handleReset}/>}
+        />
+      }
+      {screen === 'end' && 
+        <EndScreen 
+          //pass user generated answers
+          results={answers}
+          questions={questions}
+          onReset={handleReset}
+        />
+      }
     </div>
   );
 }
